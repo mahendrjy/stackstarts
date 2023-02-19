@@ -1,0 +1,29 @@
+{
+  "name": "stackstarts",
+  "version": "0.0.1",
+  "description": "Quickly select an template",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "main": "src/index.js",
+  "bin": {
+    "stackstarts": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [
+    "templates"
+  ],
+  "author": "Mahendra Choudhary",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahendrjy/stackstarts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mahendrjy/stackstarts/issues"
+  },
+  "homepage": "https://github.com/mahendrjy/stackstarts#readme"
+}
