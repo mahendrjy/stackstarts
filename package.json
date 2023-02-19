@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/mahendrjy/stackstarts/issues"
   },
-  "homepage": "https://github.com/mahendrjy/stackstarts#readme"
+  "homepage": "https://github.com/mahendrjy/stackstarts#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.5"
+  }
 }
