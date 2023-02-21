@@ -1,26 +1,22 @@
-const inquirer = require('inquirer')
-const chalk = require('chalk')
+#!/usr/bin/env node
 
-async function askForChoices(choices) {
-  const choice = await inquirer.prompt([
-    {
-      type: 'list',
-      name: 'choice',
-      message: 'Select your preferred template:',
-      choices,
-    },
-  ])
+const createJavaScriptTemplate = require('./javascript.js')
+const createTypeScriptTemplate = require('./typescript.js')
+const { askForChoices, displayErrorMessage } = require('./utils')
 
-  return choice
+const choices = ['JavaScript', 'TypeScript']
+
+async function createTemplate() {
+  const { choice } = await askForChoices(choices)
+
+  if (choice === 'JavaScript') await createJavaScriptTemplate()
+  if (choice === 'TypeScript') await createTypeScriptTemplate()
 }
 
-const createTemplate = async () => {
-  const { choice } = await askForChoices([
-    'Template 1',
-    'Template 2',
-  ])
-
-  console.log(chalk.green(`Successfully created ${choice}`))
-}
-
-createTemplate()
+;(async () => {
+  try {
+    await createTemplate()
+  } catch (e) {
+    displayErrorMessage(e)
+  }
+})()
