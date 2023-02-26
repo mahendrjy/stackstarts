@@ -1,0 +1,65 @@
+pre[class*='language-'] {
+  color: theme('colors.slate.50');
+}
+
+.tag,
+.class-name,
+.selector,
+.selector .class,
+.selector.class,
+.function {
+  color: theme('colors.pink.400');
+}
+
+.attr-name,
+.keyword,
+.rule,
+.pseudo-class,
+.important {
+  color: theme('colors.slate.300');
+}
+
+.module {
+  color: theme('colors.pink.400');
+}
+
+.attr-value,
+.class,
+.string,
+.property {
+  color: theme('colors.sky.300');
+}
+
+.punctuation,
+.attr-equals {
+  color: theme('colors.slate.500');
+}
+
+.unit,
+.language-css .function {
+  color: theme('colors.teal.200');
+}
+
+.comment,
+.operator,
+.combinator {
+  color: theme('colors.slate.400');
+}
+
+:root {
+  --scrollbar-background: theme('colors.slate.300');;
+}
+
+html.dark {
+  --scrollbar-background: theme('colors.slate.700');;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-background);
+  border-radius: 10px;
+}
