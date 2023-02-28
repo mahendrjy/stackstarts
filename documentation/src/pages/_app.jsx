@@ -1,10 +1,10 @@
-import { Prose } from '@/components/Prose'
+import { Layout } from '@/components/Layout'
 import '@/styles/tailwind.css'
 
 export default function App({ Component, pageProps }) {
   return (
-    <Prose>
+    <Layout>
       <Component {...pageProps} />
-    </Prose>
+    </Layout>
   )
 }
