@@ -1,3 +1,9 @@
+---
+title: Getting started
+pageTitle: Stackstarts - Never forget the template name.
+description: With so many template names to remember these days, Stackstarts provides an easy solution by allowing you to choose the template you want to use.
+---
+
 # Stackstarts
 
 Stackstarts is a starting point for building web applications with your preferred template. With so many template names to remember these days, Stackstarts provides an easy solution by allowing you to choose the template you want to use
