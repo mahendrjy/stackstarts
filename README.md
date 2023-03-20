@@ -1,6 +1,6 @@
 # Stackstarts
 
-Stackstarts is a starting point for building web applications with your preferred template. With so many template names to remember these days, Stackstarts provides an easy solution by allowing you to choose the template you want to use
+Stackstarts is a starting point for building web applications with your preferred template. With so many template names to remember these days, Stackstarts provides an easy solution by allowing you to choose the template you want to use.
 
 ## **Getting Started**
 
